@@ -11,6 +11,13 @@ vim_session:
 
 ######################################################################
 
+## parent.mk
+
+figures = ExpMoments.Rout.pdf TruncPlotCombined.Rout.pdf MomentsPlot.Rout.pdf
+
+
+######################################################################
+
 ### Makestuff
 
 Sources += Makefile
