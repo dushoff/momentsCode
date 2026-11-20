@@ -8,7 +8,7 @@ This repository contains all scripts required to reproduce findings in the follo
 
 ## Recreating analysis:
 
-To create the figures, you need to follow these steps:
+To regenerate the figures, please follow these steps:
 
 1. Install R.
 
@@ -67,15 +67,5 @@ To create the figures, you need to follow these steps:
     
     ---
 
-
-All figures are reproduced using stored *RData* files in  *slow* directory.
-The files in  *slow* directory can be reproduced by
-adding *.final* to the end of above commands.
-For  example, run the following command in the terminal to rerun the simulations
-on which Figure 1 depends  and regenerate Figure 1:
-
-```bash
-    make figs/ExpMoments.Rout.final 
-```
 
 
