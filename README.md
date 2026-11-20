@@ -5,18 +5,6 @@ This repository contains all scripts required to reproduce findings in the follo
 
 >  Aghaeeyan A., Goel T., Roswell M., Weitz J.S., Dushoff J. On the Distribution of Expected Case Reproductive Number in Compartmental Disease Models
 
-This code base should be cited as:
-
->  Aghaeeyan A., Goel T., Roswell M., Weitz J.S., Dushoff J. On the Distribution of Expected Case Reproductive Number in Compartmental Disease Models
-
-## Software details
-
-The code is written in R v4.5.0. We used libraries  *deSolve*, *dplyr*, *ggplot2*, *patchwork* *purrr*, *tidyr*, *shellpipes*.
-
-*shellpipes* is an R package helps streamline simulations in R using *Makefiles*.
-A *Makefile* allows the users to specify which files a target file depends on.
-By doing so, changes to the dependent files are automatically tracked, and the target file is regenerated only when any of its dependencies have changed.
-
 
 ## Recreating analysis:
 
@@ -30,7 +18,7 @@ To create the figures, you need to follow these steps:
     install.packages(c("deSolve", "dplyr", "ggplot2", "patchwork",  "purrr", "tidyr", "remotes"))
     ```
     
-    We install R package *remotes* which faciliates installing *shellpipes* package  from GitHub:
+    Run the following commands to install *shellpipes* package from GitHub:
 
     ```R
     library(remotes)
@@ -51,14 +39,10 @@ To create the figures, you need to follow these steps:
     
 
 4. Reproduce Figures
+
     Each figure can be reproduced by running the command listed below 
     from the root directory of your local repo. 
 
-    Some scripts hosted in the
-    [makestuff repository](https://github.com/dushoff/makestuff) are required
-    by the *Makefile*. That's why you might encounter some errors the first time you run a command,
-    However, after running the same command once or twice more, the scripts should be 
-    downloaded, and the errors should disappear.
 
     Figure 1:
 
